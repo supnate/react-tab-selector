@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" tpe="text/css" href="style.css"/>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script type="text/javascript">
+      var data = [
+        {name: 'Red', value: 'red'},
+        {name: 'Blue', value: 'blue'},
+        {name: 'Yellow', value: 'yellow'},
+        {name: 'Green', value: 'green'},
+        {name: 'White', value: 'White'}
+      ];
+
+      $.fn.TabSelector = function (options) {
+
+        var arr = ['<div class="tab-selector">'];
+        arr.push('<label>', options.label, '</label>');
+        arr.push('<ul>');
+        options.data.forEach(function (item) {
+          arr.push('<li data-value="', item.value, '">');
+          arr.push(item.name);
+          arr.push('</li>');
+        });
+        arr.push('</ul></div>');
+
+        this.html(arr.join(''));
+
+        var lastSelected = null;
+        this.on('click', 'li', function () {
+          var $this = $(this);
+          if (lastSelected) {
+            lastSelected.removeClass('selected');
+          }
+          $this.addClass('selected');
+          lastSelected = $this;
+        });
+
+        return this;
+      }
+
+      $('#container').TabSelector({data: data, selected: null, label: 'Color'});
+
+    </script>
+  </body>
+</html>

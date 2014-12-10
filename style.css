@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+.tab-selector {
+  margin: 50px;
+}
+
+.tab-selector {
+  overflow: hidden;
+}
+
+.tab-selector label {
+  float: left;
+  margin-right: 10px;
+  padding: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.tab-selector ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tab-selector li {
+  cursor: pointer;
+  float: left;
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+  margin: 0 10px;
+  list-style: none;
+}
+
+.tab-selector li.selected {
+  border-color: #2175bc;
+  background-color: #2175bc;
+  color: #fff;
+}

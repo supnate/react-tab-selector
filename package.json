@@ -1,0 +1,35 @@
+{
+  "name": "react-tab-selector",
+  "version": "1.0.0",
+  "description": "A sample component with React.",
+  "scripts": {
+    "start": "node ./js/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/supnate/react-tab-selector.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "hot",
+    "reload",
+    "edit",
+    "webpack"
+  ],
+  "author": "Nate Wang <supnate@gmail.com> (http://github.com/supnate)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supnate/react-tab-selector/issues"
+  },
+  "homepage": "https://github.com/supnate/react-tab-selector",
+  "devDependencies": {
+    "jsx-loader": "^0.12.2",
+    "react-hot-loader": "^1.1.1",
+    "webpack": "^1.5.1",
+    "webpack-dev-server": "1.6.4"
+  },
+  "dependencies": {
+    "react": "^0.12.0"
+  }
+}

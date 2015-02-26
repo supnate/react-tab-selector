@@ -22,7 +22,7 @@ var TabSelector = React.createClass({
 
     return (
       <div className="tab-selector">
-        <label>a{this.props.label}</label>
+        <label>{this.props.label}</label>
         <ul>
           {tabs}
         </ul>
